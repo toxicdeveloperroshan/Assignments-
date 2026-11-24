@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>College Fest Registration</title>
+</head>
+<body>
+<h1>College Fest Registration</h1>
+<form action="#" method="post">
+  <p><label>Full Name: <input type="text" name="name" required></label></p>
+  <p><label>Email: <input type="email" name="email" required></label></p>
+  <p><label>Phone: <input type="tel" name="phone" pattern="[0-9]{10}" required></label></p>
+  <p>Gender:
+    <label><input type="radio" name="gender" value="male"> Male</label>
+    <label><input type="radio" name="gender" value="female"> Female</label>
+    <label><input type="radio" name="gender" value="other"> Other</label></p>
+  <p><label>Course:
+    <select name="course">
+      <option value="">-- Select Course --</option>
+      <option>Computer Engineering</option><option>IT</option><option>Mechanical</option><option>Civil</option><option>E&amp;TC</option>
+    </select></label></p>
+  <p>Select Events:<br>
+    <label><input type="checkbox" name="event" value="coding"> Coding Contest</label><br>
+    <label><input type="checkbox" name="event" value="dance"> Dance</label><br>
+    <label><input type="checkbox" name="event" value="quiz"> Tech Quiz</label><br>
+    <label><input type="checkbox" name="event" value="music"> Singing</label></p>
+  <p><label>Registration Date: <input type="date" name="date"></label></p>
+  <p><input type="submit" value="Register"> <input type="reset" value="Clear"></p>
+</form>
+</body>
+</html>

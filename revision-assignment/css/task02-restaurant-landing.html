@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spice Garden</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+nav{display:flex;justify-content:space-between;align-items:center;padding:15px 40px;background:#2b1b12;color:#fff}
+nav ul{display:flex;list-style:none;gap:25px}
+nav a{color:#fff;text-decoration:none}
+nav a:hover{color:#ffb347}
+.hero{height:60vh;background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url('https://placehold.co/1200x600?text=Spice+Garden') center/cover;color:#fff;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.hero h1{font-size:48px;margin-bottom:10px}
+.hero a{margin-top:20px;padding:12px 28px;background:#ff7a18;color:#fff;text-decoration:none;border-radius:30px}
+.hero a:hover{background:#e56700}
+section{padding:50px 40px;text-align:center}
+.cats{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-top:25px}
+.cat{width:200px;background:#fff6ec;padding:20px;border-radius:12px;box-shadow:0 4px 10px rgba(0,0,0,.1)}
+.cat img{width:100%;border-radius:8px}
+.offers{background:#ffe5c4}
+.offer{display:inline-block;margin:15px;padding:25px 35px;background:#fff;border:2px dashed #ff7a18;border-radius:12px}
+footer{background:#2b1b12;color:#ddd;text-align:center;padding:20px}
+@media(max-width:600px){nav{flex-direction:column;gap:10px}.hero h1{font-size:30px}}
+</style>
+</head>
+<body>
+<nav><h2>Spice Garden</h2><ul><li><a href="#">Home</a></li><li><a href="#menu">Menu</a></li><li><a href="#offers">Offers</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+<div class="hero"><h1>Taste the Tradition</h1><p>Fresh, hot and homemade food every day</p><a href="#menu">Order Now</a></div>
+<section id="menu"><h2>Food Categories</h2>
+<div class="cats">
+  <div class="cat"><img src="https://placehold.co/200x130?text=Starters" alt=""><h3>Starters</h3></div>
+  <div class="cat"><img src="https://placehold.co/200x130?text=Main+Course" alt=""><h3>Main Course</h3></div>
+  <div class="cat"><img src="https://placehold.co/200x130?text=Desserts" alt=""><h3>Desserts</h3></div>
+  <div class="cat"><img src="https://placehold.co/200x130?text=Drinks" alt=""><h3>Drinks</h3></div>
+</div></section>
+<section class="offers" id="offers"><h2>Special Offers</h2>
+  <div class="offer"><h3>20% OFF</h3><p>On all weekend orders</p></div>
+  <div class="offer"><h3>Combo Deal</h3><p>Thali + Dessert at Rs. 249</p></div>
+</section>
+<footer id="contact"><p>Spice Garden, Nashik | Phone: 9876543210 | Open daily 10 AM - 11 PM</p></footer>
+</body>
+</html>

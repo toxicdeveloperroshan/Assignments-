@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hospital Appointment Booking</title>
+</head>
+<body>
+<h1>Hospital Appointment Booking</h1>
+<form action="#" method="post">
+  <h3>Patient Details</h3>
+  <p><label>Patient Name: <input type="text" name="name" required></label></p>
+  <p><label>Age: <input type="number" name="age" min="0" max="120"></label></p>
+  <p>Gender: <label><input type="radio" name="gender" value="male"> Male</label>
+  <label><input type="radio" name="gender" value="female"> Female</label>
+  <label><input type="radio" name="gender" value="other"> Other</label></p>
+  <p><label>Phone: <input type="tel" name="phone" required></label></p>
+  <h3>Appointment Details</h3>
+  <p><label>Department:
+    <select name="department">
+      <option>General Medicine</option><option>Cardiology</option><option>Orthopedics</option><option>Pediatrics</option><option>Dermatology</option>
+    </select></label></p>
+  <p><label>Doctor:
+    <select name="doctor">
+      <option>Dr. Sharma</option><option>Dr. Kulkarni</option><option>Dr. Patil</option><option>Dr. Mehta</option>
+    </select></label></p>
+  <p><label>Appointment Date: <input type="date" name="date" required></label>
+  <label>Time: <input type="time" name="time"></label></p>
+  <p><label>Symptoms:<br><textarea name="symptoms" rows="4" cols="40"></textarea></label></p>
+  <p>Medical History:<br>
+    <label><input type="checkbox" name="history" value="diabetes"> Diabetes</label>
+    <label><input type="checkbox" name="history" value="bp"> Blood Pressure</label>
+    <label><input type="checkbox" name="history" value="asthma"> Asthma</label>
+    <label><input type="checkbox" name="history" value="none"> None</label></p>
+  <p><input type="submit" value="Book Appointment"></p>
+</form>
+</body>
+</html>

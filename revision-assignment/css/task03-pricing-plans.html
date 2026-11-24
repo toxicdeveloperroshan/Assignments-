@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing Plans</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#f1f3f8;padding:50px 20px;text-align:center}
+h1{margin-bottom:40px;color:#222}
+.plans{display:flex;gap:30px;justify-content:center;flex-wrap:wrap}
+.plan{width:260px;background:#fff;padding:30px 20px;border-radius:14px;transition:transform .3s,box-shadow .3s}
+.plan:hover{transform:translateY(-12px)}
+.plan h2{margin-bottom:10px}
+.price{font-size:36px;font-weight:bold;margin:15px 0}
+.plan ul{list-style:none;margin-bottom:25px}
+.plan li{padding:8px 0;border-bottom:1px solid #eee;color:#555}
+.plan a{display:inline-block;padding:10px 28px;color:#fff;text-decoration:none;border-radius:25px;transition:opacity .3s}
+.plan a:hover{opacity:.8}
+.basic{border:3px solid #4caf50;box-shadow:0 5px 12px rgba(76,175,80,.3)}
+.basic h2,.basic .price{color:#4caf50}.basic a{background:#4caf50}
+.pro{border:3px solid #2196f3;box-shadow:0 8px 18px rgba(33,150,243,.4)}
+.pro h2,.pro .price{color:#2196f3}.pro a{background:#2196f3}
+.premium{border:3px solid #ff9800;box-shadow:0 10px 24px rgba(255,152,0,.45)}
+.premium h2,.premium .price{color:#ff9800}.premium a{background:#ff9800}
+</style>
+</head>
+<body>
+<h1>Choose Your Plan</h1>
+<div class="plans">
+  <div class="plan basic"><h2>Basic</h2><div class="price">Rs. 199</div><ul><li>1 Website</li><li>5 GB Storage</li><li>Email Support</li></ul><a href="#">Buy Now</a></div>
+  <div class="plan pro"><h2>Pro</h2><div class="price">Rs. 499</div><ul><li>5 Websites</li><li>50 GB Storage</li><li>Priority Support</li></ul><a href="#">Buy Now</a></div>
+  <div class="plan premium"><h2>Premium</h2><div class="price">Rs. 999</div><ul><li>Unlimited Websites</li><li>500 GB Storage</li><li>24/7 Support</li></ul><a href="#">Buy Now</a></div>
+</div>
+</body>
+</html>

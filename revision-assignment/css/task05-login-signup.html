@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login and Signup</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{min-height:100vh;display:flex;justify-content:center;align-items:center;gap:30px;flex-wrap:wrap;padding:20px;background:linear-gradient(135deg,#667eea,#764ba2)}
+.box{width:320px;background:#fff;padding:30px;border-radius:14px;box-shadow:0 10px 25px rgba(0,0,0,.3)}
+.box h2{text-align:center;margin-bottom:20px;color:#444}
+.box input{width:100%;padding:11px;margin-bottom:15px;border:2px solid #ddd;border-radius:8px;outline:none;transition:border-color .3s,box-shadow .3s}
+.box input:focus{border-color:#667eea;box-shadow:0 0 6px rgba(102,126,234,.6)}
+.box input:valid:not(:placeholder-shown){border-color:#2ecc71}
+.box input:invalid:not(:placeholder-shown){border-color:#e74c3c;background:#fff3f3}
+.box button{width:100%;padding:12px;border:none;border-radius:8px;background:#667eea;color:#fff;font-size:16px;cursor:pointer;transition:background .3s}
+.box button:hover{background:#4a5bd0}
+</style>
+</head>
+<body>
+<form class="box">
+  <h2>Login</h2>
+  <input type="email" placeholder="Email" required>
+  <input type="password" placeholder="Password" required minlength="6">
+  <button type="submit">Login</button>
+</form>
+<form class="box">
+  <h2>Sign Up</h2>
+  <input type="text" placeholder="Full Name" required>
+  <input type="email" placeholder="Email" required>
+  <input type="password" placeholder="Password (min 6 characters)" required minlength="6">
+  <button type="submit">Create Account</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CloudTask - SaaS Landing Page</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+html{scroll-behavior:smooth}
+nav{position:sticky;top:0;display:flex;justify-content:space-between;align-items:center;padding:15px 50px;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,.1)}
+nav h2{color:#5b3df5}
+nav ul{display:flex;gap:25px;list-style:none}
+nav a{text-decoration:none;color:#333}
+nav a:hover{color:#5b3df5}
+.hero{padding:90px 20px;text-align:center;background:linear-gradient(135deg,#5b3df5,#8e6bff);color:#fff}
+.hero h1{font-size:46px;margin-bottom:12px}
+.hero a{display:inline-block;margin-top:22px;padding:13px 32px;background:#fff;color:#5b3df5;border-radius:30px;text-decoration:none;font-weight:bold}
+section{padding:60px 50px;text-align:center}
+section h2{margin-bottom:30px}
+.grid{display:flex;gap:25px;justify-content:center;flex-wrap:wrap}
+.box{flex:1;min-width:220px;max-width:300px;background:#f6f4ff;padding:25px;border-radius:12px}
+.price-card{background:#fff;border:2px solid #5b3df5}
+.gray{background:#fafafa}
+details{max-width:600px;margin:10px auto;padding:14px;background:#f6f4ff;border-radius:8px;text-align:left}
+summary{cursor:pointer;font-weight:bold}
+footer{background:#1d1650;color:#ccc;text-align:center;padding:25px}
+@media(max-width:700px){nav{flex-direction:column;gap:10px;padding:15px}nav ul{gap:12px}.hero h1{font-size:30px}section{padding:40px 20px}}
+</style>
+</head>
+<body>
+<nav><h2>CloudTask</h2><ul><li><a href="#features">Features</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#faq">FAQ</a></li></ul></nav>
+<div class="hero"><h1>Manage your team's work in one place</h1><p>Plan tasks, track progress and finish projects on time.</p><a href="#pricing">Start Free Trial</a></div>
+<section id="features"><h2>Features</h2><div class="grid">
+  <div class="box"><h3>Task Boards</h3><p>Organise work with simple boards.</p></div>
+  <div class="box"><h3>Team Chat</h3><p>Talk to your team inside every task.</p></div>
+  <div class="box"><h3>Reports</h3><p>See progress with easy charts.</p></div>
+</div></section>
+<section class="gray" id="reviews"><h2>What Customers Say</h2><div class="grid">
+  <div class="box"><p>"CloudTask made our weekly planning very easy."</p><b>- Priya, Pune</b></div>
+  <div class="box"><p>"Our team finishes projects faster now."</p><b>- Rahul, Mumbai</b></div>
+</div></section>
+<section id="pricing"><h2>Pricing</h2><div class="grid">
+  <div class="box price-card"><h3>Starter</h3><h2>Rs. 0</h2><p>Up to 3 projects</p></div>
+  <div class="box price-card"><h3>Team</h3><h2>Rs. 499</h2><p>Unlimited projects</p></div>
+  <div class="box price-card"><h3>Business</h3><h2>Rs. 999</h2><p>Advanced reports and support</p></div>
+</div></section>
+<section class="gray" id="faq"><h2>FAQ</h2>
+  <details><summary>Is there a free plan?</summary><p>Yes, the Starter plan is free.</p></details>
+  <details><summary>Can I cancel anytime?</summary><p>Yes, you can cancel from your account page.</p></details>
+  <details><summary>Does it work on mobile?</summary><p>Yes, CloudTask works on all screen sizes.</p></details>
+</section>
+<footer><p>&copy; 2026 CloudTask. All rights reserved.</p></footer>
+</body>
+</html>

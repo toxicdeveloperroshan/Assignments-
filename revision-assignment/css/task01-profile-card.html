@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile Card</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{min-height:100vh;display:flex;justify-content:center;align-items:center;background:#e8eef7}
+.card{width:320px;background:#fff;border-radius:16px;padding:30px;text-align:center;box-shadow:0 8px 20px rgba(0,0,0,.15);transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-8px);box-shadow:0 14px 28px rgba(0,0,0,.25)}
+.card img{width:130px;height:130px;border-radius:50%;border:4px solid #2a6fdb;transition:transform .3s}
+.card:hover img{transform:scale(1.08)}
+.card h2{margin-top:15px;color:#1c2b4a}
+.card h4{color:#2a6fdb;margin:5px 0 12px}
+.card p{color:#555;font-size:14px;line-height:1.5}
+.social{margin-top:18px;display:flex;justify-content:center;gap:12px}
+.social a{width:38px;height:38px;border-radius:50%;background:#2a6fdb;color:#fff;text-decoration:none;display:flex;justify-content:center;align-items:center;font-weight:bold;transition:background .3s,transform .3s}
+.social a:hover{background:#1c2b4a;transform:scale(1.15)}
+</style>
+</head>
+<body>
+<div class="card">
+  <img src="https://placehold.co/130x130?text=RA" alt="Profile">
+  <h2>Roshan Avhad</h2>
+  <h4>Software Developer</h4>
+  <p>Final-year computer engineering student who loves building web apps and learning new technologies.</p>
+  <div class="social"><a href="#">in</a><a href="#">gh</a><a href="#">tw</a><a href="#">ig</a></div>
+</div>
+</body>
+</html>

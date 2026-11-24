@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{display:flex;min-height:100vh;background:#f0f2f5}
+.sidebar{width:220px;background:#1f2a40;color:#fff;padding:25px 0}
+.sidebar h2{text-align:center;margin-bottom:25px}
+.sidebar a{display:block;padding:14px 25px;color:#cfd6e4;text-decoration:none;transition:background .3s}
+.sidebar a:hover,.sidebar a.active{background:#34425f;color:#fff}
+.main{flex:1;padding:25px}
+.topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:25px}
+.stats{display:flex;gap:20px;flex-wrap:wrap;margin-bottom:25px}
+.stat{flex:1;min-width:150px;background:#fff;padding:20px;border-radius:10px;border-left:5px solid #3f51b5;box-shadow:0 2px 6px rgba(0,0,0,.1)}
+.stat:nth-child(2){border-color:#4caf50}.stat:nth-child(3){border-color:#ff9800}.stat:nth-child(4){border-color:#e91e63}
+.stat h3{font-size:26px;margin-top:6px}
+.activity{background:#fff;padding:20px;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,.1)}
+.activity li{list-style:none;padding:10px 0;border-bottom:1px solid #eee}
+@media(max-width:700px){body{flex-direction:column}.sidebar{width:100%;padding:10px 0}.sidebar a{display:inline-block;padding:10px 14px}}
+</style>
+</head>
+<body>
+<div class="sidebar"><h2>AdminPanel</h2><a class="active" href="#">Dashboard</a><a href="#">Users</a><a href="#">Orders</a><a href="#">Reports</a><a href="#">Settings</a></div>
+<div class="main">
+  <div class="topbar"><h1>Dashboard</h1><span>Welcome, Admin</span></div>
+  <div class="stats">
+    <div class="stat"><p>Total Users</p><h3>1,250</h3></div>
+    <div class="stat"><p>Orders</p><h3>340</h3></div>
+    <div class="stat"><p>Revenue</p><h3>Rs. 85,000</h3></div>
+    <div class="stat"><p>Pending</p><h3>18</h3></div>
+  </div>
+  <div class="activity"><h2>Recent Activity</h2>
+    <ul><li>New user Amit registered</li><li>Order #1024 was shipped</li><li>Payment received from Neha</li><li>Report for November generated</li></ul>
+  </div>
+</div>
+</body>
+</html>
